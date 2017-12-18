@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+    <title>玩客云行情,链克行情/链克行情查看</title>
+    <meta name="keywords" content="链克行情,链克实时行情,玩客币行情,玩客币实时行情,玩客币行情查询,玩客币市场行情" />
+    <meta name="description" content="链克行情(www.dyls.net)本站提供链克行情查询，玩客币行情查询，链克市场行情查询，玩客币市场行情查询，链克实时行情查询，玩客币实时行情查询，玩客币链克涨跌情况查询。玩客币链克行情网站致力于打造一个信息及时全面的玩客币行情链克行情查询网站，努力于打造玩客币链克玩家第一站。本站仅做参考，投资需谨慎！" />
+    <style>
+        /* Table Head */
+        #table-container.dataintable {
+            margin-top:1px;
+            border-collapse:collapse;
+            border:1px solid #aaa;
+            width:100%;
+            text-align:center;
+        }
+        #table-container.dataintable th {
+            vertical-align:baseline;
+            padding:5px 15px 5px 6px;
+            background-color:#000000;
+            border:1px solid #000000;
+            text-align:center;
+            color:#00EE00;
+        }
+        #table-container.dataintable td {
+            vertical-align:text-top;
+            padding:6px 15px 6px 6px;
+            border:1px solid #aaa;
+        }
+        #table-container.dataintable tr:nth-child(odd) {
+            background-color:#F5F5F5;
+        }
+        #table-container.dataintable tr:nth-child(even) {
+            background-color:#fff;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b7fb20e3d15aa88fab7c420c71774174";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+<body align="center" >
+<h1>玩客币/链克行情</h1>
+<p id="updateTime">30s刷新</p>
+<div id='main'>
+    <table width="99%" align="center" cellspacing=0 id="table-container" class="dataintable">
+        <thead>
+        <tr>
+            <th>平台</th>
+            <th>成交</th>
+            <th>买一 / 卖一</th>
+            <th>总额</th>
+            <th>涨跌</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>cex_usdt</td>
+            <td><font color=red>4.48↑</font>	   </td>
+            <td>4.48 / 4.56</td>
+            <td>151208</td>
+            <td><font color=red>2.76%</font></td>
+        </tr>
+        <tr>
+            <td>cex_eth</td>
+            <td><font color=red>4.58↑</font>	   </td>
+            <td>4.30 / 4.58</td>
+            <td>40966</td>
+            <td><font color=red>14.22%</font></td>
+        </tr>
+        <tr>
+            <td>悠雨林</td>
+            <td><font color=green>4.44↓</font>	   </td>
+            <td>4.44 / 4.49</td>
+            <td>178439</td>
+            <td><font color=green>-1.33%</font></td>
+        </tr>
+        <tr>
+            <td>Z网</td>
+            <td><font color=green>4.49↓</font>	   </td>
+            <td>4.42 / 4.49</td>
+            <td>771396</td>
+            <td><font color=green>-1.45%</font></td>
+        </tr>
+        <tr>
+            <td>玩客社区</td>
+            <td><font color=red>5.76↑</font>	   </td>
+            <td>4.30 / 5.76</td>
+            <td>20</td>
+            <td><font color=red>9.00%</font></td>
+        </tr>
+        <tr>
+            <td>www.u.cx</td>
+            <td>6.00	   </td>
+            <td>5.98 / 6.00</td>
+            <td>33170</td>
+            <td>--</td>
+        </tr>
+        <tr>
+            <td>BTC86网</td>
+            <td><font color=red>4.45↑</font>	   </td>
+            <td>4.42 / 4.49</td>
+            <td>2911</td>
+            <td><font color=red>0.72%</font></td>
+        </tr>
+        <tr>
+            <td>玩客家</td>
+            <td><font color=green>4.52↓</font>	   </td>
+            <td>4.50 / 4.53</td>
+            <td>58912</td>
+            <td><font color=green>-1.09%</font></td>
+        </tr>
+        <tr>
+            <td>币通网</td>
+            <td><font color=red>4.25↑</font>	   </td>
+            <td>4.24 / 4.25</td>
+            <td>68162</td>
+            <td><font color=red>18.06%</font></td>
+        </tr>
+        <tr>
+            <td>币澳网</td>
+            <td><font color=red>4.54↑</font>	   </td>
+            <td>4.54 / 4.56</td>
+            <td>310322</td>
+            <td><font color=red>0.22%</font></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div style="text-align: center;">本站是链克行情站、玩客币行情站！仅提供行情！仅供参考！不作任何投资建议！投资有风险！投资需谨慎！</div>
+<script>
+  /*  $(function(){
+        var showNum = $('#showNum').text();
+        function countDown(showNum){
+            var timer=setInterval(function(){
+                showNum--;
+                if(showNum>0){
+                    showRandom(showNum);
+                }else{
+                    window.location.reload();
+                }
+            },1000);
+        }
+        countDown(showNum);
+        function showRandom(showNum){
+
+            $("#showNum").html(showNum);
+        }
+    })*/
+  function getInfo() {
+      $.get("getLinkInfo",function(data,status){
+          var obj = JSON.parse(data.resultMessage);
+          $("#wjw").text(obj.wjw);
+          $("#cex").text(obj.cex);
+          $("#uyl").text(obj.uyl);
+          console.log(data);
+          console.log(status);
+      });
+  }
+
+  var countdown=30;
+  getInfo();
+  function settime(val) {
+      if (countdown == 0) {
+          getInfo();
+          countdown = 30;
+      } else {
+          $("#updateTime").text(countdown+"秒刷新");
+          countdown--;
+      }
+      setTimeout(function() {
+          settime(val)
+      },1000)
+  }
+  settime(countdown);
+</script>
+<div style="display: none;"><script src="https://s9.cnzz.com/z_stat.php?id=5130510&web_id=5130510" language="JavaScript"></script></div>
+</body>
+</html>	
